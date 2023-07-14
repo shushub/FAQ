@@ -1,10 +1,14 @@
 import './App.css';
-import Frame from './Components/Frame';
+import Accordion from './Components/Accordion';
+import Title from './Components/Title';
 
 function App() {
   return (
+    <div>
     <div className="App">
-        <Frame />
+      <Title />
+      <Accordion />
+    </div>
     </div>
   );
 }

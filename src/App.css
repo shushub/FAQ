@@ -1,16 +1,13 @@
 .App {
-  
-}
-.frame{
   width: 1440px;  
   height: 1186px;
   background: var(--lm-bg-1, #F5F6F8);
   display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+  padding-left: 52px;
 }
 .secondbox{
-  margin-left: 52px;
-  margin-bottom: 1076px;
-  margin-top: 27px;
   display: flex;
 }
 .title{
@@ -64,17 +61,16 @@ input:focus {
   border: 1px solid var(--neutral-5, #D9D9D9);
   padding: 2px;
 }
-.container {
-  display: flex;  
+.container{
+  display: flex;
   width: 856px;
   flex-direction: column; 
-  align-items: flex-start;
-  flex-direction: column;
-  margin-top: 115px;
   border-radius: 2px;
   border: 1px solid var(--neutral-5, #D9D9D9);
-  margin-bottom: 583px;
-  margin-right: 139px;
+  margin-left: 383px;
+  border: 1px solid var(--neutral-5, #D9D9D9);
+  background: var(--neutral-2, #FAFAFA);
+  margin-top: 58px;
 }
 .accordion-box{
   display: flex;
@@ -84,31 +80,44 @@ input:focus {
   align-self: stretch;
   border: 1px solid var(--neutral-5, #D9D9D9);
   background: var(--neutral-2, #FAFAFA);
-  flex-direction: column;
 }
-.titlequestion{
+.titlebox{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
   align-items: flex-start;
   flex: 1 0 0;
-  color: var(--character-primary-85, rgba(0, 0, 0, 0.85));
+}
+.titlequestion{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: var(--character-primary-85, rgba(0, 0, 0, 0.85));  
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
 }
+.contentframe{
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
 .content{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   align-self: stretch;
   border: 1px dashed var(--primary-3, #91D5FF);
   background: var(--primary-1, #E6F7FF);
+  max-height: 0;
   overflow: hidden;
-  transition: all 0.5s cubic-bezier(0,1,0,1);
+  transition: all 0.5s cubic-bezier(0,1,0,1)
 }
 .contenttext{
   display: flex;
@@ -123,4 +132,30 @@ input:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+.content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+.boxframe{
+  display: inline-block;
+}
+.listtitle{
+  color: var(--dm-line-unclick, #424242);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  display: flex;
+}
+.listtitle:hover {
+  color: var(--lm-point-color, #5100CE);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
 }

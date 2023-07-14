@@ -1,7 +1,9 @@
 import React from 'react';
+import Accordion from './Accordion';
 
 const Title = () => {
     return (
+        <>
         <div className='secondbox'>
             <span className='title'>FAQ</span>
                 <form>
@@ -15,7 +17,9 @@ const Title = () => {
                         <img src="icon.svg" alt=" " />
                     </div>
         </div>
+        </>
     );
 };
 
 export default Title;
+
