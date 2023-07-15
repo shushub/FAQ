@@ -60,17 +60,15 @@ input:focus {
   flex-shrink: 0;
   border: 1px solid var(--neutral-5, #D9D9D9);
   padding: 2px;
+  margin-bottom: 58px;
 }
 .container{
   display: flex;
   width: 856px;
   flex-direction: column; 
   border-radius: 2px;
-  border: 1px solid var(--neutral-5, #D9D9D9);
   margin-left: 383px;
-  border: 1px solid var(--neutral-5, #D9D9D9);
   background: var(--neutral-2, #FAFAFA);
-  margin-top: 58px;
 }
 .accordion-box{
   display: flex;
@@ -113,7 +111,6 @@ input:focus {
   align-items: center;
   flex-direction: column;
   align-self: stretch;
-  border: 1px dashed var(--primary-3, #91D5FF);
   background: var(--primary-1, #E6F7FF);
   max-height: 0;
   overflow: hidden;
@@ -138,9 +135,6 @@ input:focus {
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1,0,1,0);
 }
-.boxframe{
-  display: inline-block;
-}
 .listtitle{
   color: var(--dm-line-unclick, #424242);
   font-family: Poppins;
@@ -149,6 +143,8 @@ input:focus {
   font-weight: 400;
   line-height: 25px;
   display: flex;
+  margin-top:26px;
+
 }
 .listtitle:hover {
   color: var(--lm-point-color, #5100CE);
@@ -158,4 +154,32 @@ input:focus {
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
+}
+.messageframe{
+  display: inline-flex;
+  padding: 7px 18px;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 3px;
+  border: 1px solid var(--light-point, #5100CE);
+  margin-top: 40px;
+}
+.messagetext{
+  color: var(--light-point, #5100CE);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+.thirdbox{
+  display: inline-block;
+}
+.line{
+  width: 2px;
+  height: 14px;
+  flex-shrink: 0;
+  background: var(--lm-point-color, #5100CE);
 }

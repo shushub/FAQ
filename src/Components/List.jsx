@@ -23,12 +23,12 @@ const option = [
 const List = () => {
     return (
         <div className='boxframe'>
-                {option.map((item, i) => (
-                    <span className='listtitle'>
-                        {item.question}
-                    </span>
+            {option.map((item, i) => (
+                <span className='listtitle'>
+                    {item.question}
+                </span>
             ))}
-            </div>
+        </div>
     );
 };
 
