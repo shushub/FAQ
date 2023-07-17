@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 .App {
   width: 1440px;  
   height: 1186px;
@@ -12,7 +16,7 @@
 }
 .title{
   color: var(--lm-sub-text-icon, #334D6E);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
@@ -39,7 +43,7 @@
 input {
   border:none;
   color: var(--character-disabled-amp-placeholder-25, rgba(0, 0, 0, 0.25));
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -49,6 +53,7 @@ input {
 input:focus {
   outline: none;
   align-items: center;
+  color:rgba(0, 0, 0, 0.85);
 }
 .icon-box{
   display: flex;
@@ -67,8 +72,8 @@ input:focus {
   width: 856px;
   flex-direction: column; 
   border-radius: 2px;
-  margin-left: 383px;
   background: var(--neutral-2, #FAFAFA);
+  margin-left: 60px;
 }
 .accordion-box{
   display: flex;
@@ -92,7 +97,7 @@ input:focus {
   justify-content: center;
   align-self: stretch;
   color: var(--character-primary-85, rgba(0, 0, 0, 0.85));  
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -124,7 +129,7 @@ input:focus {
   justify-content: center;
   color: var(--primary-6, #1890FF);
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -137,14 +142,13 @@ input:focus {
 }
 .listtitle{
   color: var(--dm-line-unclick, #424242);
-  font-family: Poppins;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  display: flex;
   margin-top:26px;
-
+  white-space: nowrap;
 }
 .listtitle:hover {
   color: var(--lm-point-color, #5100CE);
@@ -167,19 +171,19 @@ input:focus {
 .messagetext{
   color: var(--light-point, #5100CE);
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
 }
-.thirdbox{
-  display: inline-block;
+.boxframe{
+  display: flex;
+  flex-direction: column;
+  margin-right: 173px;
 }
-.line{
-  width: 2px;
-  height: 14px;
-  flex-shrink: 0;
-  background: var(--lm-point-color, #5100CE);
+.secondframe{
+  display: flex;
+  flex-direction: row;
 }

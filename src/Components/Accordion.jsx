@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import List from './List';
-import Message from './Message';
+import FourthBox from './FourthBox';
 
 function Accordion(){
     const[selected, setSelected] = useState(null);
@@ -12,8 +11,9 @@ function Accordion(){
         setSelected(i)
     }
     return (
-        <div className='thirdbox'>
-            <div>
+            <div className='secondframe'>
+                <FourthBox />
+                <div>
                 {data.map((item, i) => (
                     <div className='container'>
                         <div className='accordion-box'>
@@ -25,12 +25,11 @@ function Accordion(){
                         <div className={selected === i ? 'content show' : 'content'}>
                             <span className='contenttext'>{item.view}</span>
                         </div>
-                    </div> 
-                        ))}
+                    </div>
+                ))}
+                </div>
+                
             </div>
-            <List />
-            <Message />
-        </div>
     );
 };
 
@@ -65,9 +64,15 @@ const data = [
         question: "This is panel header 1",
         view: "Swap"
     },
+    {   id:8,
+        question: "This is panel header 1",
+        view: "Swap"
+    },
+    {   id:9,
+        question: "This is panel header 1",
+        view: "Swap"
+    },
 ];
-
-    
 
 export default Accordion;
 
